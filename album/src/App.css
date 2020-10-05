@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  font-family: "Architects Daughter", cursive;
+
+}
+
+.container {
+  width: 70%;
+  height: 820px;
+  margin: auto;
+  margin-top: 2%;
+  transform: scale(1);
+  background-color: white;
+  box-shadow: 10px 10px 10px grey;
+  border-left: 1px dashed #ccc;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+h1 {
+  width: 100%;
+  height: 110px;
+  font-size: 50px;
+  padding: 15px 0;
+  color: white;
+  text-align: center;
+  background-color: #fdcb6e;
+  border: 3px solid #fdcb6e;
+}
+
+.grid {
+  margin-top: 4%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* card part*/
+.wrapper {
+  width: 72%;
+  position: absolute;
+  top: 200px;
+  left: 230px;
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  width: 180px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25%;
+  box-shadow: 8px 8px 8px grey;
+  transform: scale(1);
+}
+
+.card img {
+  max-width: 100%;
+  transition: transform 0.2s;
+}
+
+.card .title {
+  height: 50px;
+  padding: 8px 0;
+  color: #805301;
+  text-align: center;
+  font-weight: bold;
+  background-color: #ffeaa7;
+}
+
+/* sidebar part */
+.sideBar {
+  width: 180px;
+  padding: 20px;
+  text-align: left;
+  position: absolute;
+  top: 170px;
+}
+
+.sideLink {
+  padding: 20px;
+  margin: 5px 0;
+  line-height: 0.6;
+  color: #805301;
+  list-style: none;
+  font-weight: bolder;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+   box-shadow: 2px 2px 2px grey;
+  transform: scale(1);
+}
+
+a:link,
+li:hover,
+img:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* modal part */
+.modal {
+  z-index: 1;
+  width: 100%;
+  font-size: 34px;
+  margin-top: -50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  min-height: 100vh;
+  background: white;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+.modal img {
+  width: 500px;
+  margin-top: 30px;
+  box-shadow: 10px 10px 10px grey;
+  transform: scale(1);
+}
+
+.modal h1 {
+  width: 500px;
+  box-shadow: 10px 10px 10px grey;
+}
